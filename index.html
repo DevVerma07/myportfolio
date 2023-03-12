@@ -1,0 +1,318 @@
+<!-- <?php 
+$success='';
+$conn = mysqli_connect("localhost","root","","portfoliodata");
+
+if(!empty($_POST["submit_email"])){
+$email = $_POST['email'];
+$sql = "INSERT INTO `emaildata` (`no`, `email`) VALUES ('', '$email');";
+mysqli_query($conn,$sql);
+$success=1;
+}
+
+header('loacation:myportfolio.php');
+$conn -> close();
+
+?> -->
+<!DOCTYPE html>
+
+
+<head>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="../myportfolio/css/res.css">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="/php_study/study/deva.png" type="image/x-icon">
+    <title>Portfolio</title>
+
+</head>
+
+<body>
+    <div class="moj">
+        <div class="container">
+
+            <nav class="navbar navbar-expand-sm navbar ">
+                <h2 class="logo navbar-brand m-0">Portfo<span class="lio">lio</span></h2>
+                <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="grid collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active"><a href="#" style="color:#9d00e5;" style="--i:1;">Home</a></li>
+                        <li class="nav-item"><a href="#" style="--i:2;">CV</a></li>
+                        <li class="nav-item"><a href="#qualification" style="--i:3;">Qualification</a></li>
+                        <li class="nav-item"><a href="#skills" style="--i:4;">Skills</a></li>
+                        <li class="nav-item"><a href="#contact" style="--i:5;">Contact</a></li>
+                    </ul>
+                    <a class="btn" href="https://linkly.net/Resume">View Resume</a>
+
+                </div>
+        </div>
+        </nav>
+
+        <section id="text" class="sec jumbotron">
+            <h4>Hello my name is</h4>
+            <h1 style=" margin-top: 2px; margin-bottom: 3px;">Dev Kumar Verma</h1>
+            <h3>I'am a web developer.</h3>
+
+            <div class="ns" id="down">
+
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Enter Your Email" required>
+
+                    <input type="submit" name="submit_email" value="Lets Start">
+                </form>
+
+            </div>
+        </section>
+
+
+
+    </div>
+
+    <section class="about">
+        <div class="mai">
+            <span class="dsc" id="image"><img src="../myportfolio/data/DSC2.jpeg" alt="dev"></span>
+            <div class="about-txt">
+                <h2>About Me</h2>
+                <h6 class="desi">
+
+                    <span><i></i>D</span>
+                    <span><i></i>e</span>
+                    <span><i></i>v</span>
+                    <span><i></i>e</span>
+                    <span><i></i>l</span>
+                    <span><i></i>o</span>
+                    <span><i></i>p</span>
+                    <span><i></i>e</span>
+                    <span><i></i>r</span>
+                    <span><i></i>&</span>
+                    <span><i></i>D</span>
+                    <span><i></i>e</span>
+                    <span><i></i>s</span>
+                    <span><i></i>i</span>
+                    <span><i></i>g</span>
+                    <span><i></i>n</span>
+                    <span><i></i>e</span>
+                    <span><i></i>r</span>
+
+
+                </h6>
+                <p>I am frontend developer. I can provide clean and pixel perfect design. I also Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quos illo quibusdam est ipsa animi ducimus quisquam nesciunt excepturi suscipit accusantium
+                    eligendi repellat, molestias officia nam eum atque tempore delectuy </p>
+                <button>Let's Talk</button>
+            </div>
+        </div>
+        <p id="qualification"></p>
+    </section>
+
+    <div class="service">
+        <div class="title">
+            <h2>Qualification</h2>
+        </div>
+        <div class="box">
+
+            <div class="card">
+
+                <h4 class="fa">(B.E/B.TECH)</h4>
+                <h5>UG</h5>
+                <div class="pra">
+                    <p>Raipur Institute Of Technology, Raipur</p>
+                    <p>Year Of Passing <br>2018 - 2022</p>
+                    <p>University <br> C.S.V.T.U</p>
+                    <p>Marks (%)<br> 75.5%</p>
+                    <p style="text-align: center ;"><a class="button" href="#">Read More</a></p>
+                </div>
+            </div>
+
+            <div class="card">
+
+                <h4 class="fa">(H.S.C)</h4>
+                <h5>12th</h5>
+                <div class="pra">
+                    <p>Govt. Higher Secondary School Chandkhuri, Raipur</p>
+                    <p>Year Of Passing <br> 2018</p>
+                    <p>Board<br>C.G.B.S.E</p>
+                    <p>Marks (%)<br> 62.8%</p>
+                    <p style="text-align: center ;"><a class="button" href="#">Read More</a></p>
+                </div>
+            </div>
+
+            <div class="card">
+
+                <h4 class="fa">(S.S.C)</h4>
+                <h5>10th</h5>
+                <div class="pra">
+                    <p>Govt. Higher Secondary School Chandkhuri, Raipur</p>
+                    <p>Year Of Passing <br>2016</p>
+                    <p>Board<br>C.G.B.S.E</p>
+                    <p>Marks (%)<br> 61.8%</p>
+                    <p style="text-align: center ;"><a class="button" href="#">Read More</a></p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="tiltPersonal">
+
+            <div class="tit">
+
+
+
+                <h2 class="dd" id="skills">Professional Skills</h2>
+
+            </div>
+
+            <h2 class="d">Personal Detail</h2>
+            <center>
+
+                <section class="personal">
+                    <div class="cl">
+                        <ul>
+                            <li>Name:</li>
+                            <li>Date Of Birth:</li>
+                            <li>Address:</li>
+                            <br>
+                            <li>Email:</li>
+                            <li>Call:</li>
+                        </ul>
+                        <ul>
+                            <li>Dev Kumar Verma</li>
+                            <li>26/06/2000</li>
+                            <li>Vill- Mungesar, Po- Chandkhuri, Raipur, CG , India </li>
+                            <li>devkumarverma830@gmail.com</li>
+                            <li>+91 9754686808</li>
+                        </ul>
+                    </div>
+
+                    <div class="contra">
+                        <div class="cardi">
+                            <div class="percent" style="--clr:#04fc43;--num:85;">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>85<span class="sp1">%</span></h2>
+                                    <p>HTML/CSS/Js</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cardi">
+                            <div class="percent" style="--clr:#fee800;--num:35;">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>35<span class="sp2">%</span></h2>
+                                    <p>JAVA</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardi">
+                            <div class="percent" style="--clr:#ff00be;--num:45;">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>45<span class="sp3">%</span></h2>
+                                    <p>Backend</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardi">
+                            <div class="percent" style="--clr:#06ccff;--num:65;">
+                                <div class="dot"></div>
+                                <svg>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                    <circle cx="70" cy="70" r="70"></circle>
+                                </svg>
+                                <div class="number">
+                                    <h2>65<span class="sp4">%</span></h2>
+                                    <p>NONE</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </center>
+        </div>
+        <div class="contact">
+            <p>Let me get you a beautiful website.</p>
+            <a class="btn2" href="#">Hire Me</a>
+        </div>
+
+    </div>
+    <footer id="contact">
+        <p>Dev Kumar Verma</p>
+        <p>Right now i am begginner but i know about HTML ,CSS JS and coding if you want to connect with me by link given below</p>
+        <div class="social">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+
+        </div>
+
+        <a class="glow-on-hover" href="#">Developed By Myself</a>
+
+    </footer>
+    <script>
+        let text = document.getElementById('text');
+        let btn = document.getElementById('down');
+        let img = document.getElementById('image');
+        // let img2 = document.getElementById('2');
+        // let img3 = document.getElementById('3');
+        // let img4 = document.getElementById('4');
+
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            text.style.top = value * -0.2 + '%';
+            down.style.marginTop = value * -0.1 + 'px';
+            img.style.scale = 85 + value * 0.007 + '%';
+            // img4.style.right = value * -0.3 + 'px';
+            // img1.style.top = 80 + value * -0.2 + 'px';
+            // img1.style.left = 60 + value * -0.2 + 'px';
+            // img3.style.scale = 100 + value * -0.017 + '%';
+            // img3.style.right = 100 + value * -0.02 + 'px';
+            // img2.style.left = -20 + value * -0.4 + 'px';
+        })
+    </script>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../myportfolio/js/vanilla-tilt.js"></script>
+    <script type="text/javascript" src="../myportfolio/js/ScrollTrigger.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 12,
+            speed: 300,
+            glare: true,
+            "max-glare:": 0.4,
+
+        });
+
+        VanillaTilt.init(document.querySelectorAll(".cardi"), {
+            max: 12,
+            speed: 300,
+            glare: true,
+
+            "max-glare:": 0.4,
+
+        });
+    </script>
+
+</body>
+
+</html>

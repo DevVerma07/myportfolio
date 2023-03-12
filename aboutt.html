@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../myportfolio/css/res.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Response</title>
+</head>
+<link rel="stylesheet" href="./css/bootstrap.css">
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="../myportfolio/css/res.css">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+/>
+<link rel="stylesheet" href="../blog/css/mystyle.css">
+
+<body>
+
+    <!-- temp header time pass
+     <header id="header">
+        <a href="#" class="logo">Moon</a>
+        <ul>    
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">description</a></li>
+            <li><a href="#">contact</a></li>
+        </ul>
+
+    </header> -->
+
+
+    <div class="sec">
+        <h2>Scrolling webiste</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At possimus sint incidunt ad quisquam dicta, saepe quae itaque iste. Numquam id quaera\ Ex modi assumenda quisquam neque totam. Nobis fuga nulla inventore odit, dolores architecto sed ex
+            voluptatibus veritatis delectus quae cupiditate! Explicabo debitis asperiores corporis ea id reprehenderit aliquid. Vitae, natus sunt praesentium deleniti cum aspernatur eaque fugiat culpa qui molestias, recusandae nihil non expedita odio
+            perferendis illum. Assumenda fuga sed laborum sit esse soluta delectus. Quam, ad voluptatum libero, ducimus rerum dicta quos doloremque asperiores odit, reiciendis esse. Ut autem placeat libero aliquam quaerat cupiditate officia aspernatur
+            ducimus? Sequi officia cupiditate veniam tempora quisquam eos culpa soluta architecto ipsum sint repellat, assumenda quia dolorum quaerat inventore ea eius enim amet dicta? Autem distinctio iste aliquid nobis maxime error <br><br> hic provident
+            atque commodi aperiam consequatur natus laborum amet rem ipsa ad, libero deserunt est eligendi accusamus fuga perferendis sequi perspiciatis? Fugiat nobis eum eveniet, tenetur temporibus provident natus molestias tempora quidem velit assumenda
+            blanditiis, ducimus iste, sed accusantium quasi ullam suscipit labore? Ea quidem pariatur placeat hic natus ab quas voluptas vel. Ipsa aut expedita nisi rem, veniam dolores non consequatur beatae cum officia doloremque atque fugiat blanditiis
+            cupiditate aliquam aspernatur quis voluptatibus aliquid tempore. Nobis sed sit quae, corporis provident numquam labore unde repudiandae sint dolorem odit deserunt quos rerum dicta dignissimos est maiores ullam consequatur enim. Laborum nisi
+            explicabo dignissimos facilis aliquid vero, et hic. Velit facere pariatur accusamus delectus ullam quibusdam quisquam est laudantium aliquam odit iste aliquid eveniet deserunt earum, debitis fugiat veniam illum eligendi quasi porro commodi
+            culpa non fuga. Accusantium iusto exercitationem quidem, ipsum esse, voluptatibus nisi officia reiciendis explicabo voluptatum est. Doloremque unde molestias at temporibus quibusdam rem explicabo ipsum fugiat cum aliquid voluptas, quas sunt
+            dolorem perferendis, natus, illum ipsam! Nobis, et! Dolorum, voluptatibus culpa porro expedita pariatur incidunt nulla perspiciatis laudantium cumque rerum. Tempora, rerum dolor inventore non omnis voluptatibus ipsam quis quia saepe hic necessitatibus
+            ab officia recusandae consectetur iste in natus voluptates repellat magnam nihil odio. Fuga, ipsa cumque! Nam ad facilis, autem hic reiciendis nemo dolore laudantium similique impedit aperiam architecto ō esse. Consequatur corrupti. <br><br>            minima quae optio nisi sed nesciunt unde, perferendis ipsa quasi officiis in. Blanditiis autem fugiat aliquid dignissimos nesciunt ducimus magnam odio eos a eum libero perspiciatis, voluptatibus molestiae suscipit quam voluptas iure odit deleniti
+            perferendis unde nulla obcaecati id, sit iste. Aliquam obcaecati tempora earum praesentium, officia ipsam. Quaerat incidunt, numquam odio, mollitia dolor adipisci fugiat, earum dolorum beatae quam architecto necessitatibus perferendis? Repudiandae
+            mnis! Ab facilis optio reprehenderit minima quibusdam praesentium adipisci. Accusantium, excepturi enim eveniet ea nostrum necessitatibus optio aperiam error fugit assumenda atque labore fuga, totam quae dolore quidem tempore odit quia soluta
+            ipsam, id sed iure quos! Repudiandae suscipit accusantium expedita? perferendis unde nulla obcaecati id, sit iste. Aliquam obcaecati tempora earum praesentium, officia ipsam. Quaerat incidunt, numquam odio, mollitia dolor adipisci fugiat,
+            earum dolorum beatae quam architecto necessitatibus perferendis? Repudiandae mnis! Ab facilis optio reprehenderit minima quibusdam praesentium adipisci. Accusantium, excepturi enim eveniet ea nostrum necessitatibus optio aperiam error fugit
+            assumenda atque labore fuga, totam quae dolore quidem tempore odit quia soluta ipsam, id sed iure quos! Repudiandae suscipit accusantium expedita?</p>
+    </div>
+
+    <script>
+        let text = document.getElementById('text');
+        let img1 = document.getElementById('1');
+        let img2 = document.getElementById('2');
+        let img3 = document.getElementById('3');
+        let img4 = document.getElementById('4');
+        let btn = document.getElementById('btn');
+
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            text.style.top = 40 + value * -0.2 + '%';
+            img4.style.top = value * 0.3 + 'px';
+            img4.style.right = value * -0.3 + 'px';
+            img1.style.top = 80 + value * -0.2 + 'px';
+            img1.style.left = 60 + value * -0.2 + 'px';
+            btn.style.marginTop = value * 1.2 + 'px';
+            img3.style.scale = 100 + value * -0.017 + '%';
+            img3.style.right = 100 + value * -0.02 + 'px';
+            img2.style.scale = 100 + value * -0.03 + '%';
+            img2.style.left = -20 + value * -0.4 + 'px';
+        })
+    </script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+
+</html>
